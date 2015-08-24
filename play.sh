@@ -25,7 +25,7 @@ start() {
         if [ $off -eq 0 ] ; then
             [ -z "$vol" ] && vol="1"
             
-            ./play_single.sh $name $gap $vol &
+            play_single.sh $name $gap $vol &
             echo "play name ($name) gap($gap) vol($vol)"
         fi
         
