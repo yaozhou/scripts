@@ -1,0 +1,22 @@
+1. (sudo apt-get install xdotool)
+   安装xdotool,程序中需要用xdotool模拟按键
+
+2. pip install paho-mqtt
+   安装mqtt,mqtt用于在PC和路由器之间收发消息
+
+3. ssh 到路由器上，执行
+   echo "user matrix" > /data/conf/mosquitto.conf
+   生成用于启动mosquitto的配置文件
+
+
+   然后执行mosquitto -c /data/conf/mosquitto.conf (重启后失效，需再次运行)
+
+4. 配对魔豆按键，设置其操作为"mosquitto_pub -t key -m Next"
+   Next为PAGEDOWN按键的名字，更多按键名字可以运行
+   xev
+
+   mosquitto_pub -t key -m Prior   
+
+5. pc端执行remote-control.py
+
+   按下魔豆按键后，就相当于PC上点击了PAGE_DOWN的按键，可以实现看书翻页等功能
