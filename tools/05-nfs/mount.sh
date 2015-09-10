@@ -7,13 +7,13 @@ if [ "$1" != "" ] ; then
     SERVER=$1
 fi
 
-SERVER_OP_PATH="/home/eric-zhou/work/mtk-openwrt"
+SERVER_OP_PATH="/home/yao/work/mtk-openwrt"
 CLIENT_OP_PATH="/mtk-openwrt"
 
-SERVER_APP_PATH="/home/eric-zhou/work/modou-app"
+SERVER_APP_PATH="/home/yao/work/modou-app"
 CLIENT_APP_PATH="/modou-app"
 
-SERVER_WEB_PATH="/home/eric-zhou/work/mogubao-web"
+SERVER_WEB_PATH="/home/yao/work/mogubao-web"
 CLIENT_WEB_PATH="/mogu-web"
 
 #ip=`ifconfig | grep "inet addr:192.168." | awk '{print $2}' | awk -F ':' '{print $2}'`

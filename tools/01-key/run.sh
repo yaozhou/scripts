@@ -9,5 +9,5 @@ fi
 AUTH_KEYS="/etc/dropbear/authorized_keys"
 TMP_KEY="/tmp/key"
 
-scp /home/eric-zhou/.ssh/id_rsa.pub matrix@$SERVER:$TMP_KEY
+scp /home/yao/.ssh/id_rsa.pub matrix@$SERVER:$TMP_KEY
 ssh matrix@$SERVER "cat $TMP_KEY >> $AUTH_KEYS ; chmod 0600 $AUTH_KEYS; rm $TMP_KEY"

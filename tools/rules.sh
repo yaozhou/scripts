@@ -1,5 +1,5 @@
 #!/bin/sh
 
 #SERVER=modouwifi.net
-SERVER=172.18.18.1
+SERVER=192.168.18.1
 
