@@ -1,9 +1,18 @@
-#!/bin/nodejs
+#!/usr/bin/nodejs
+
+if (process.argv.length != 3) {
+	console.log("error : " + process.argv[1] + ": input html file") ;
+	process.exit() ;
+}
+
 
 var fs = require('fs') ;
 var cp = require('child_process') ;
 
-filename = "/home/yao/develop/touying/xiaoshuai/src.html" ;
+console.log(process.argv) ;
+
+//filename = "/home/yao/develop/touying/xiaoshuai/src.html" ;
+filename = process.argv[2] ;
 var str = fs.readFileSync(filename).toString() ;
 var ary = str.match(/src="[^"]+"/g) ;
 

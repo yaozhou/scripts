@@ -1,1 +1,1 @@
-ssh  -qTfnN -D 7070 na@linode
+ssh -qTfnN -D 0.0.0.0:7070 na@106.186.121.34
