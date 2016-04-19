@@ -11,6 +11,8 @@ for file_name in ./*; do
 	basename=${file_name%.*}
 	suffix=${file_name#*.}
 
-
 	mv $file_name $basename.$new_suffix
+
+	# change resolution, width -> 700 ,   if we want change height then use x700 instead of 700
+	convert -resize 700 $basename.$new_suffix $basename.$new_suffix
 done
