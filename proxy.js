@@ -30,7 +30,7 @@ var server = require('http').createServer(function(req, res) {
         proxy.web(req, res, { target: 'http://localhost:4567' });  
     break;  
     case 'www.manmanqiusuo.com':  
-        proxy.web(req, res, { target: 'http://localhost:3000' });  
+        proxy.web(req, res, { target: 'http://localhost:3001' });  
     break;  
     case 'bbs.manmanqiusuo.com':  
         proxy.web(req, res, { target: 'http://localhost:4567' });  
