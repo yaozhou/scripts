@@ -6,7 +6,6 @@ cd /home/yao/blog && nohup http-server -p 8001 > /tmp/t2 &
 
 /home/yao/develop/scripts/ss_local.sh
 sudo nohup node /home/yao/develop/scripts/proxy/proxy.js > /tmp/proxy.out &
-<<<<<<< HEAD
 cd /home/yao/develop/logic-test
 nohup node /home/yao/develop/logic-test/main.js &
 nohup node /home/yao/develop/ear-travel/main.js &
