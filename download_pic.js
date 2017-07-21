@@ -17,6 +17,7 @@ var str = fs.readFileSync(filename).toString() ;
 var ary = str.match(/src="[^"]+"/g) ;
 
 for (var i = 0; i < ary.length; i++) {
+	console.log("str:" + ary[i]) ;
 	var url = ary[i].match(/http:\/\/[^"]+/g)[0] ;
 	
 	var cmd = "wget " + url + " -O out//" + (100+i) + ".jpg"
