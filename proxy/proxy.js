@@ -22,10 +22,12 @@ var server = require('http').createServer(function(req, res) {
   switch(host){  
     case 'www.logictest.net':
         proxy.web(req, res, { target: 'http://localhost:3000' });  
-    break;  
-      
+    	break;  
+    case 'ht.manmanqiusuo.com':
+        proxy.web(req, res, { target: 'http://115.29.164.142:9000' });
+        break;  
     case 'www.manmanqiusuo.com':  
-        proxy.web(req, res, { target: 'http://localhost:3001' });  
+        proxy.web(req, res, { target: 'http://localhost:4001' });  
     break;  
     case 'bbs.manmanqiusuo.com':  
         proxy.web(req, res, { target: 'http://localhost:4567' });  
