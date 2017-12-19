@@ -1,8 +1,6 @@
 #!/bin/sh
 
-#/home/yao/develop/todolist2/run.sh
-cd /home/yao/web_static && nohup http-server -p 8000 > /tmp/t1 &
-#cd /home/yao/blog && nohup http-server -p 8001 > /tmp/t2 &
+#sh -x ws.sh
 
 /home/yao/develop/scripts/ss_local.sh
 
@@ -16,8 +14,8 @@ cd /home/yao/develop/ear-travel
 nohup node /home/yao/develop/ear-travel/main.js &
 #/home/yao/develop/NodeBB/nodebb start
 
-cd /home/yao/develop/ele/heatmap/out
-nohup http-server -p 8889 &
+#cd /home/yao/develop/ele/heatmap/out
+#nohup http-server -p 8889 &
 
 nohup superset runserver &
 
@@ -26,3 +24,5 @@ nohup superset runserver &
 nohup redis-server &
 
 sudo mount -t nfs -o vers=4.0  0e42648e07-esb49.cn-hangzhou.nas.aliyuncs.com:/ /nfs
+
+/home/yao/software/atlassian-jira-6.3.6-standalone/bin/start-jira.sh
